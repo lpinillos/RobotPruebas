@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Proyecto COLORLIB</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cc73138444f9221952e713a02eaeeb3645f1fb5bb17b5ffb9bc550620d6d14fe.html">Verify The Validation Form</a></span>
+                > <span class="truncate-60"><a
+                    href="4324d68249ec9c19bf3501c4bde007d6982aacc0918068e61ee810d17f0a7c38.html">Verify the validation form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-05-2023 22:40</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Verify The Validation Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Me as a user WANT to enter the colorlib page TO verify the validation form
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="a1a3ea4878672669fd991f477f0c440e5827f143a9b9c2d028a6d28f83355513.html">Historia De Usuario
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Verify the validation form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I enter with my credentials<br><table class='embedded'><thead><th>User</th><th>Password</th></thead><tbody><tr><td>&lt;User&gt;</td><td>&lt;Password&gt;</td></tr></tbody></table><br>When I proceed with the authentication<br>And go to the main view of the page<br>And enter submenu form validation<br>And check the tittle of the form on the screen<br>And fill all the fields<br><table class='embedded'><thead><th>Required</th><th>Select</th><th>MultipleSelect</th><th>Url</th><th>Email</th><th>PasswordVFP</th><th>ConfirmPasswordVFP</th><th>MinField</th><th>MaxField</th><th>Number</th><th>Ip</th><th>Date</th><th>DateEarlier</th></thead><tbody><tr><td>&lt;Required&gt;</td><td>&lt;Select&gt;</td><td>&lt;MultipleSelect&gt;</td><td>&lt;Url&gt;</td><td>&lt;Email&gt;</td><td>&lt;PasswordVFP&gt;</td><td>&lt;ConfirmPasswordVFP&gt;</td><td>&lt;MinField&gt;</td><td>&lt;MaxField&gt;</td><td>&lt;Number&gt;</td><td>&lt;Ip&gt;</td><td>&lt;Date&gt;</td><td>&lt;DateEarlier&gt;</td></tr></tbody></table><br>And click button validate<br>Then fields required will be empty</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="86ba26c175390dab8c4d54ea11b11df83beba7d5e87e88154c51d30fcaf3f307.png" title=" 1: Verify the validation form ({User=admin, Password=admin, Required=prueba, Select=option2, MultipleSelect=option3, Url=http://youtube.com, Email=hola@q.com, PasswordVFP=123, ConfirmPasswordVFP=123, MinField=1234567, MaxField=1, Number=33.88, Ip=184.202.2.148, Date=2012-12-24, DateEarlier=2012/09/11})" width="1920"/>
+                <img src="86ba26c175390dab8c4d54ea11b11df83beba7d5e87e88154c51d30fcaf3f307.png" title=" When I proceed with the authentication" width="1920"/>
+                <img src="86ba26c175390dab8c4d54ea11b11df83beba7d5e87e88154c51d30fcaf3f307.png" title=" Open page" width="1920"/>
+                <img src="86ba26c175390dab8c4d54ea11b11df83beba7d5e87e88154c51d30fcaf3f307.png" title=" Sign in: admin, admin" width="1920"/>
+                <img src="faa9dd41128bd898dc3e28586876f9cc185b2d3eb091b13281865955b8a286ff.png" title=" Sign in: admin, admin" width="1920"/>
+                <img src="25df2c7dc8b11fdeb30eede5a7ff0916a84aee204194486662fabb0b24a0a1ae.png" title=" Sign in: admin, admin" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" Sign in: admin, admin" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" Sign in: admin, admin (completed)" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" When I proceed with the authentication (completed)" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" And go to the main view of the page" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" And go to the main view of the page (completed)" width="1920"/>
+                <img src="40289091748904f1be42b0d390e599ee8fd7b81ab82b79ae38d3bef9825c410a.png" title=" And enter submenu form validation" width="1920"/>
+                <img src="3f0cbe546b7da308709585634978d3e1befb456a5922273b4c161affba8150e6.png" title=" And enter submenu form validation" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" And enter submenu form validation" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" And enter submenu form validation (completed)" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" And check the tittle of the form on the screen" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" And check the tittle of the form on the screen (completed)" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="85631c0cffdce66170e08467b04a66a6166bf720859228f8e3b0ad237e2c65e1.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="1a761143a9d284cd9c8662c24f7ca80aa6fb9e2880474138b2d61ea7ca31dd9f.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="20c1e1dd9abc359175c22c855973e338f96d2207b5c780f3923533e259209854.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="497fa2fe8606626d5e2ac52fc3fbca85ed1cbe9c9730325ba5bdf1c1a2d7ecc2.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="cf1969fb913083346069fbb18fb759e99d5468cc12fbc338964750ea0f1033a4.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="42335d7ab2c145737d645a4f52fb51bb175b35926e95b6556a4c77b140f8b67a.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="74c3f712dafb3958914ee4f658e130dd1e1386d0bf4f80959224bffd3a341bf1.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="865e7fe2e7c0985a9fb31e0ecba6e7b6d7a747926d603021cf98e45b417bc7f9.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="18b60fc6dd3125f46f1b104fb1f13528215bf507147fd08c866d91645ec64b75.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="e28653312a2c884f5c0595a77e6a5cd908b91b135f60a006c3551e448fd6eaaf.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="bcd31959aecf284b0b8ffc247d0fe5b7d67dd261c7e4a59362ac0a534d88ab80.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="ab37969fe62a6d650b64c67201fe1fdee9399b4c9f956dcd7598496e53f00813.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="000d1d92e47938b40c3547aa7e28c9a81f8813746c4ddbfcad22c1ae7e8e42a2.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="e9d3f10664a5d68a4308c3da60aacb074c2bceb864acbd1d2813a45bce99c61f.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 |" width="1920"/>
+                <img src="a29c7160f87295b662c941a42823bc42bc7cbd95c5bbfe8d928b89f2f7c50efd.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | PasswordVFP | ConfirmPasswordVFP | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| prueba | option2 | option3 | http://youtube.com | hola@q.com | 123 | 123 | 1234567 | 1 | 33.88 | 184.202.2.148 | 2012-12-24 | 2012/09/11 | (completed)" width="1920"/>
+                <img src="a29c7160f87295b662c941a42823bc42bc7cbd95c5bbfe8d928b89f2f7c50efd.png" title=" And click button validate" width="1920"/>
+                <img src="962f1bbd1d0898d7a223e15ce7feb70a49a78be7a9388edf6d6519720092f869.png" title=" And click button validate" width="1920"/>
+                <img src="962f1bbd1d0898d7a223e15ce7feb70a49a78be7a9388edf6d6519720092f869.png" title=" And click button validate (completed)" width="1920"/>
+                <img src="962f1bbd1d0898d7a223e15ce7feb70a49a78be7a9388edf6d6519720092f869.png" title=" Then fields required will be empty" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" Then fields required will be empty (completed)" width="1920"/>
+                <img src="e5e21faf3f2de764a809e542260b96032a881e5b021cdeb7f39966ba6a5e95a9.png" title=" 1: Verify the validation form ({User=admin, Password=admin, Required=prueba, Select=option2, MultipleSelect=option3, Url=http://youtube.com, Email=hola@q.com, PasswordVFP=123, ConfirmPasswordVFP=123, MinField=1234567, MaxField=1, Number=33.88, Ip=184.202.2.148, Date=2012-12-24, DateEarlier=2012/09/11}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.0.5</span>
+</div>
+</body>
+</html>
